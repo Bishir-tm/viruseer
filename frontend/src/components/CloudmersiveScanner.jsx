@@ -8,7 +8,7 @@ const CloudmersiveScanner = () => {
   const [scanResult, setScanResult] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
 
-  const onDrop = (acceptedFiles) => {
+  const onDrop = (acceptedFiles) => { 
     const selectedFile = acceptedFiles[0];
     setFile(selectedFile);
  

@@ -2,14 +2,16 @@ import React from 'react'
 
 const GptVersion = () => {
    <div className='d-flex justify-content-center' 
-        {...getRootProps()}
+        // {...getRootProps()}
         style={{
-          border: `10px ${isDragging ? 'red' : 'yellow'}`,
+          border: `10px`,
           cursor: 'pointer',
           transition: 'border 0.3s ease',
         }}
       >
-        <input {...getInputProps()} />
+        <input 
+        // {...getInputProps()} 
+        />
         <div className='vh-100'>
           <img src={myImage} alt="My Image" className='rounded rounded-circle w-100'   />
           <p className='fs-1 fw-bolder text-light' >Drag 'n' drop a file here, or click to select a file</p>
