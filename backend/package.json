@@ -18,6 +18,7 @@
     "axios": "^1.5.1",
     "cloudmersive-virus-api-client": "^1.2.7",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.1",
     "firebase-admin": "^11.11.0",

@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(fileUpload());
 
-const CLOUDMERSIVE_API_KEY = '2415dffc-e2a2-4ce7-9d63-8662f7773530';
+const CLOUDMERSIVE_API_KEY = process.env.CLOUDMERSIVE_API_KEY 
 
 app.post('/scan', async (req, res) => {
   const url = 'https://api.cloudmersive.com/virus/scan/file';

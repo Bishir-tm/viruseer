@@ -21,7 +21,8 @@ const CloudmersiveScanner = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:8080/scan', formData, {
+      // const response = await axios.post('http://localhost:8080/scan', formData, {
+      const response = await axios.post('https://viruseer.onrender.com/scan', formData, {
         onUploadProgress: (progressEvent) => {
           const progress = Math.round((progressEvent.loaded / progressEvent.total) * 100);
           setUploadProgress(progress);
