@@ -11,7 +11,7 @@ const CloudmersiveScanner = () => {
   const onDrop = (acceptedFiles) => {
     const selectedFile = acceptedFiles[0];
     setFile(selectedFile);
-
+ 
     // Perform file scan here
     scanFile(selectedFile);
   };
