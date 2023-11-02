@@ -150,8 +150,12 @@ const CloudmersiveScanner = () => {
             (<h4>Your File is Clean !</h4>)
             : 
             ( <div>
-                <h4>Your File is Infected. {scanResult.FoundViruses.length} virus(es) found:</h4>    
-                <div>{scanResult.FoundViruses.map((virus) => `<li>(${virus.VirusName})</li>`)} </div>
+                <h4>Your File is Infected. "{scanResult.FoundViruses.length}" virus(es) found:</h4>    
+                <div>
+                  <ol className='lead '>
+                    <strong>{scanResult.FoundViruses.map((virus) => <li>{virus.VirusName}</li>)}</strong>
+                  </ol>
+                </div>
             </div>
             )
           }

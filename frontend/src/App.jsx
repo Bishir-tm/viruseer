@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App vh-100 bg-dark">
       <header className="App-header bg-dark">
-        <h1 className='py-5 display-2 fw-bolder brand-name text-center text-danger' >Viruseer</h1>
+        <h1 className='py-5 display-2 fw-bolder brand-name text-center text-danger' >Online Antivirus</h1>
       </header>
         <CloudmersiveScanner />
         {/* <About /> */}
